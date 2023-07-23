@@ -1,0 +1,15 @@
+# start MonogDB
+mongod
+
+
+# change directory
+cd C:\kafka_2.13-3.4.0\bin\windows
+# start zookeeper
+zookeeper-server-start.bat ../../config/zookeeper.properties
+# start kafka-server
+kafka-server-start.bat ../../config/server.properties
+# start kafka consumer
+kafka-console-consumer.bat --topic recommendation_topic --bootstrap-server localhost:9092 --from-beginning
+
+# run flask app
+python main.py
