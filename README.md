@@ -1,0 +1,2 @@
+# Real-Time-Amazon-Product-Recommendation-System-using-Apache-Spark-MongoDB-Flask-and-Apache-Kafka
+We implemented a two-phase project: Phase 1 involved loading cleaned Amazon product data into MongoDB using Apache Spark and performing EDA. Phase 2 included training a recommendation model, setting up a Flask web app, and using Apache Kafka for real-time streaming of personalized recommendations and storing them in MongoDB.
